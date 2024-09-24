@@ -271,26 +271,89 @@ font-size: 1.5em;
 
 /* review */
 
+
+
+.review-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+  
+  
+}
+
 .reviews{
   display: flex;
-  width: 100vw;
-
+  width: 90vw;
+  gap: 20px;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 30px;
+  margin: 0 5px;
+  padding-top: 50px;
+  
+  
 }
 
 .review{
 width: 17vw;
 height: 300px;
+border: 1px solid rgb(174, 174, 174);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
 }
 
 .review-img{
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  border: 0.5px solid black;
 }
 
 .star-solid{
-  width: 45px;
-  height: 10px;
+  width: 90px;
+  height: 20px;
   background-image: url(img/star-solid.svg);
   background-size: contain;
+  margin: 20px;
+  position: absolute;
+  top: 70px;
+  
  
 }
+
+
+.person-review{
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.review-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-info span:first-child{
+font-weight: 600;
+}
+
+.review-info span:nth-child(2){
+
+font-size: 0.8em;
+color: gray;
+  }
+
+  .review p{
+    position: absolute;
+    left: 10px;
+    top: 130px;
+    
+  }
